@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لماذا تختارنا</title>
+<style>
+    body {
+        width: 100%;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #0b3746 0%, #051c2b 100%);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffffc5;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .reasons-list {
+        margin-top: 30px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .reason {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .reason-icon {
+        display: block;
+        width: 50px !important;
+        height: 50px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        margin-right: 15px; /* Increased margin for better spacing */
+        animation: scail 2s ease infinite;
+    }
+    @keyframes scail {
+        0% {
+            transform: translateY(-10px);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+        100% {
+            transform: translateY(-0px);
+        }
+    }
+    
+
+    .reason-text {
+        flex: 1;
+        line-height: 1.5rem;
+        color: #464545; /* Fill remaining space */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Why Choose Us</h1>
+    <p style="text-align: center; color: rgba(12, 40, 59, 0.678);">We provide a comprehensive array of internet services to cater to all your online requirements! From crafting professional websites and designing e-commerce stores to facilitating product purchases, we assure you of several robust and efficient online solutions.</p>
+    
+    <ul class="reasons-list">
+        <li class="reason">
+            <div class="reason-icon">1</div>
+            <div class="reason-text">Comprehensive Services: We offer a wide range of internet services, covering everything from website creation to e-commerce solutions. No matter your online needs, we have the expertise to fulfill them.</div>
+        </li>
+        <li class="reason">
+            <div class="reason-icon">2</div>
+            <div class="reason-text">Professionalism: Our team consists of skilled professionals dedicated to delivering high-quality results. From designing websites to managing e-commerce stores, we prioritize professionalism in every aspect of our work.</div>
+        </li>
+        <li class="reason">
+            <div class="reason-icon">3</div>
+            <div class="reason-text">Customized Solutions: We understand that every business is unique. That's why we tailor our services to suit your specific requirements, ensuring that you receive personalized solutions that align with your goals.</div>
+        </li>
+        <li class="reason">
+            <div class="reason-icon">4</div>
+            <div class="reason-text">Effective Results: With our experience and expertise, we guarantee powerful and effective outcomes. Whether you're looking to boost online sales or enhance brand visibility, we have the tools and strategies to help you succeed.</div>
+        </li>
+        <li class="reason">
+            <div class="reason-icon">5</div>
+            <div class="reason-text">Customer Satisfaction: Your satisfaction is our priority. We strive to provide excellent customer service and support throughout our partnership, ensuring that your experience with us is seamless and enjoyable.</div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

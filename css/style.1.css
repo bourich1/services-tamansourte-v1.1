@@ -1,0 +1,16 @@
+.logo{
+    width: 150px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+        h2{
+            color: #549EF2;
+            sup{
+                font-size: 12px;
+                font-weight: 900 !important;
+                color: #302D2E;
+            }
+        }
+}
