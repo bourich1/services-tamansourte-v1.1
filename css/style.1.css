@@ -6,7 +6,7 @@
     align-items: center;
     height: 30px;
         h2{
-            color: #549EF2;
+            color: #549EF2 !important;
             sup{
                 font-size: 12px;
                 font-weight: 900 !important;
