@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <link rel="stylesheet" href="../css/cssStore/prudactPage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="product-container">
+        <div class="header">
+          <h1 id="title"></h1>
+        <img id="productImage" src="" alt="Product Image">
+        <p id="description"></p>
+        </div>
+        <div class="body">
+          <p id="price"><span>PRICE &nbsp;</span></p>
+        
+          <div class="options-container sizes-container">
+            <h3 style="text-align: center;margin-right: 20px;">size :</h3>
+            <!-- Sizes checkboxes will be generated here -->
+        </div>
+        <div class="options-container colors-container">
+          <h3 style="text-align: center;margin-right: 20px;">color :</h3>
+          <!-- Colors checkboxes will be generated here -->
+      </div>
+      <div class="options-container quantity-container">
+        <!-- Quantity dropdown menu will be generated here -->
+    </div>
+    <div class="input-container">
+      <div>
+        <label for="locationInput">Please enter your Name</label>
+        <input type="text" id="nameInput" placeholder="Please enter your name">
+    </div>
+      <div>
+          <label for="numberInput">Your number</label>
+          <input type="number" id="numberInput" placeholder="Your number">
+      </div>
+      <div>
+          <label for="locationInput">Please enter location</label>
+          <input type="text" id="locationInput" placeholder="Please enter location">
+      </div>
+  </div>
+    <!-- Add this button to your HTML -->
+    <button id="send-whatsapp">Buy now</button>
+
+        
+        </div>
+    </div>
+    <script src="../js/medStore.js"></script>
+    <script src="../js/prudactDitils.js"></script>
+</body>
+</html>
+
