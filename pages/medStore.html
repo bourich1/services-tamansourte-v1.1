@@ -3,62 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoping the best prudact with yourservices</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/cssStore/style.css">
-    <link rel="stylesheet" href="../css/cssStore/shop.css">
+    <style>
+        body{
+            margin-bottom: 50px !important;
+        }
+        a {
+      font-size:14px;
+      font-weight:700
+    }
+    .superNav {
+      font-size:13px;
+    }
+    .form-control {
+      outline:none !important;
+      box-shadow: none !important;
+    }
+    @media screen and (max-width:540px){
+      .centerOnMobile {
+        text-align:center
+      }
+      .carousel {
+      height: auto !important;
+      width: 90% !important;
+    }
+    }
+    .carousel {
+      width: 70%;
+      height: 400px;
+      margin: auto;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    </style>
+   <link rel="stylesheet" href="../css/cssStore/shop.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>med store</title>
 </head>
 <body>
-    <div class="container">
-        <div class="top"><i class="fa-solid fa-circle-up"></i></div>
-
-        <!-- med store -->
-        <div class="store-med">
-            <header>
-                <div class="logo-store">
-                    <img src="img/MED-STORE/medSTORE.png" width="100%"  alt="medSTORE">
+        <!-- nav bar -->
+        <div class="superNav border-bottom py-2 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+                  <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>mohmeddawi@gmail.com</strong></span>
+                  <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i> <strong>+212 647-262-361</strong></span>
                 </div>
-                <div class="search">
-                    <input type="text" placeholder="what  you want shoping today ...">
-                    <button class="search-btn">search</button>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+                  <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="#">Shipping</a></span>
+                  <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Policy</a></span>
                 </div>
-                <div class="selling">
-                    <i style="font-size: 1.5rem;cursor: pointer;" class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </header>
-            <div class="all-prudacts">
-                
+              </div>
             </div>
-        </div>
-        <div class="body-content">
-            <div class="category">
-                <h3> <i style="padding-right: 20px;" class="fa-solid fa-list"></i>ALL category</h3>
-                <ul>
-                    <li class="category-item " data-id="all"><i class="fa-solid fa-house"></i>  ALL prudacts</li>
-                    <li class="category-item " data-id="Shoes"><i class="fa-solid fa-shoe-prints"></i> Shoes</li>
-                    <li class="category-item " data-id="Sports-Fitness"><i class="fa-solid fa-dumbbell"></i> Showing Sports + Fitness</li>
-                    <li class="category-item " data-id="Telecommunications"><i class="fa-solid fa-mobile-screen"></i>  Phones & Telecommunications</li>
-                    <li class="category-item " data-id="Men's-Clothing"><i class="fa-solid fa-shirt"></i>  Men's Clothing</li>
-                    <li class="category-item " data-id="Sports-Entertainment"><i class="fa-solid fa-baseball"></i>  Sports & Entertainment</li>
+          </div>
+          <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+            <div class="container">
+              <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>MED STORE</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+                <div class="input-group">
+                  <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                  <button class="btn btn-warning text-white">Search</button>
+                </div>
+              </div>
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="ms-auto d-none d-lg-block">
+                  <div class="input-group">
+                    <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                    <button class="btn btn-warning text-white">Search</button>
+                  </div>
+                </div>
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>new prudact</a>
+                  </li>
                 </ul>
-                <div class="item">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <span>FREE SHIPPING</span>
-                </div>
-                <div class="item">
-                    <i class="fa-solid fa-headset"></i>
-                    <span>24/7 SUPPORT</span>
-                </div>
-                <div class="item">
-                    <i class="fa-solid fa-rotate-left"></i>
-                    <span>FREE RETURNS</span>
-                </div>
+              </div>
             </div>
-            <div class="prudacts-2">
-                
-            </div>
+          </nav>
+      <!-- end navbar -->
+      <div id="carouselExampleIndicators" class="carousel slide bg-warning mt-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </div>
-    <script src="../js/medStore.js"></script>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1080" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1080" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/3912477/pexels-photo-3912477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- prudact -->
+      
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
