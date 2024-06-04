@@ -5,6 +5,7 @@ const prudactMedStore = [
         img: "../img/prudact/new2.png",
         category: "Shoes",
         price: 155,
+        oldPrice : 405,
         description :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus voluptas corrupti reiciendis sapiente eligendi dolores modi? Mollitia, dolorum est?",
         numberSize: [40, 42, 43],
         colors : ["pink" , "green" ,"blue"]
@@ -15,6 +16,7 @@ const prudactMedStore = [
         img: "../img/prudact/new3.png",
         category: "Sports-Fitness",
         price: 120,
+        oldPrice : 405,
         description :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus voluptas corrupti reiciendis sapiente eligendi dolores modi? Mollitia, dolorum est?",
         numberSize: [50, 42, 10],
         colors : ["gray" , "black" ,"yellow"]
@@ -25,6 +27,7 @@ const prudactMedStore = [
         img: "../img/prudact/new4.png",
         category: "Men's-Clothing",
         price: 520,
+        oldPrice : 405,
         description :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus voluptas corrupti reiciendis sapiente eligendi dolores modi? Mollitia, dolorum est?",
         numberSize: ["sm", "xl", "2xl"],
         colors : ["black" , "white" ,"red"]
@@ -35,6 +38,18 @@ const prudactMedStore = [
         img: "../img/prudact/new4.png",
         category: "Sports-Entertainment",
         price: 520,
+        oldPrice : 405,
+        description :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus voluptas corrupti reiciendis sapiente eligendi dolores modi? Mollitia, dolorum est?",
+        numberSize: ["sm", "xl", "2xl"],
+        colors : ["black" , "white" ,"red"]
+    },
+    {
+        id: 4,
+        titel: "airfocs 3s",
+        img: "../img/prudact/new4.png",
+        category: "Sports-Entertainment",
+        price: 520,
+        oldPrice : 405,
         description :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus voluptas corrupti reiciendis sapiente eligendi dolores modi? Mollitia, dolorum est?",
         numberSize: ["sm", "xl", "2xl"],
         colors : ["black" , "white" ,"red"]
@@ -111,37 +126,29 @@ window.addEventListener("DOMContentLoaded", () => {
 function displayProdactMed(prudacts) {
     var displayPrudactsMed = prudacts.map((ele) => {
         return `
-        <div class="prudact">
-            <div class="header">
-                <img src=${ele.img} width="100%" alt="">
-            </div>
-            <div class="content">
-                <h4>${ele.titel}</h4>
-                <p>FREE SHIPPING</p>
-            </div>
+        <article class="card">
+        <div class="card__img">
+            <img src=${ele.img} alt="">
         </div>
+        <div class="card__name">
+            <p>${ele.titel}</p>
+        </div>
+        <div class="card__precis">
+            
+            <div>
+                <span class="card__preci card__preci--before">$ ${ele.oldPrice}</span>
+                <span class="card__preci card__preci--now">$${ele.price}</span>
+            </div>
+            <a href="prudactPage.html?id=${ele.id}" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+        </div>
+    </article>
         `
     }).join("");
-    document.querySelector(".all-prudacts").innerHTML = displayPrudactsMed;
+    document.getElementById("all-prudact").innerHTML = displayPrudactsMed;
 }
 
 // display prudact body gg
-function displayProdactMed2(prudact) {
-    var displayPrudactBody = prudact.map((ele) => {
-        return `
-        <div class="card" data-id=${ele.id}>
-            <div class="imgBox">
-                <img src=${ele.img} alt="${ele.titel}" class="mouse">
-            </div>
-            <div class="contentBox">
-                <h3>${ele.titel}</h3>
-                <h2 class="price">${ele.price} $</h2>
-                <a href="prudactPage.html?id=${ele.id}" class="view-details buy">View</a>
-            </div>
-        </div>`;
-    }).join("");
-    document.querySelector(".prudacts-2").innerHTML = displayPrudactBody;
-}
+
 
 // run filter category
 filterBtn.forEach(function (btn) {
